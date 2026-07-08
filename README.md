@@ -29,7 +29,7 @@ An optimization tournament was carried out using `GridSearchCV` with a 3-fold cr
 * **Random Forest Configuration:** Evaluated ensembles consisting of $50$ and $100$ estimators (decision trees) combined with tree depth boundaries restricted to $5$ and $10$ layers to avoid overfitting.
 
 ## Evaluation & Results
-The automated grid search crowned the **Random Forest Classifier** configured with 100 decision trees and a maximum depth of 5 layers as the optimal model. 
+The automated grid search crowned the **Logistic Regression** model configured with a regularization penalty of $C = 10$ as the optimal model setup.
 * **Overall Accuracy:** Achieved a reliable score of **82%** on unseen validation test data.
 * **Class 0 (Retained Customers):** Achieved a precision score of 0.86 and a recall score of 0.90.
 * **Class 1 (Churned Customers):** Achieved a precision score of 0.67 and a recall score of 0.60.
@@ -38,4 +38,4 @@ The automated grid search crowned the **Random Forest Classifier** configured wi
 ## Conclusion & Production Value
 This project successfully showcases an end-to-end automated pipeline capable of parsing raw relational data and outputting high-fidelity risk evaluations. 
 * **Model Serialization:** Exported the unified pipeline using `joblib` into a singular, portable binary file (`churn_pipeline_model.pkl`).
-* **Deployment Readiness:** This saved artifact holds both the structural transformer rules and the final weights of the Random Forest model. It can be instantly loaded into a live web server or API endpoint to generate real-time inferences without running manual preprocessing workflows again.
+* **Deployment Readiness:** This saved artifact holds both the structural transformer rules and the final weights of the winning Logistic Regression model. It can be instantly loaded into a live web server or API endpoint to generate real-time inferences without running manual preprocessing workflows again.
