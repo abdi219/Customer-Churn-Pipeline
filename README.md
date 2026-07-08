@@ -6,7 +6,7 @@ This project was completed as part of the AI/ML Engineering Internship at Develo
 This project focuses on building a reusable, production-ready machine learning pipeline using Scikit-Learn to predict customer churn for a telecom company. The goal is to automatically analyze customer behavior data, clean it, and determine whether a user is likely to cancel their service, allowing the business to take proactive retention actions.
 
 ## Dataset
-The dataset used is the Telco Customer Churn dataset, which contains demographic, account, and service information for thousands of real-world customers.
+The dataset used in this project is the Telco Customer Churn dataset, loaded directly via URL from **IBM's public GitHub dataset repository**. It contains demographic, account, and service information for thousands of real-world telecom consumers.
 * **Target variable:** `Churn` (Whether the customer left within the last month: Yes/No)
 * **Key features used:** * Numerical attributes (Tenure, Monthly Charges, Total Charges)
   * Categorical attributes (Contract type, Payment method, Internet service type, Streaming options, etc.)
